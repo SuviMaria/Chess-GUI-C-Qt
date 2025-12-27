@@ -1,6 +1,7 @@
 CHESS GUI C++ QT - A graphical chess game written in C++ using the Qt framework.
 
-Final project for course "Programming 3" 2025 in the Tampere University. Chess piece images were provided as part of the course material.
+Final project for course "Programming 3" 2025 in the Tampere University. 
+Chess piece images were provided as part of the course material as well as the classes chessboard and chesspiece.
 
 ENG
 
