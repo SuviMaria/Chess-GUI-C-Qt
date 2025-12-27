@@ -1,0 +1,32 @@
+Tämä ohjelma on graafinen shakkipeli, jossa kaksi pelaajaa voi pelata toisiaan vastaan samalla koneella. Peli tukee tavallisia shakin sääntöjä (ilman erikoissiirtoja kuten linnoitus tai en passant).
+
+Ohjelma on toteutettu Qt C++ -kirjastoa hyödyntäen, ja se sisältää graafisen käyttöliittymän, jossa nappuloita voi klikata ja siirtää hiirellä.
+
+1. Ohjelman käynnistys
+	1. Avaa projekti Qt Creator -kehitysympäristössä.
+	2. Varmista, että resurssitiedosto (esim. pieces.qrc) sisältää kaikki tarvittavat kuvatiedostot shakkinappuloille.
+	3. Käännä ja suorita ohjelma (Ctrl + R tai paina "Run").
+
+2. Käyttöliittymän rakenne
+- 8×8 ruudukko (lauta), jossa vuorottelevat mustat ja valkoiset ruudut.
+- Jokainen ruutu on painike (QPushButton), johon asetetaan nappulan kuvake.
+- Vuorossa olevan pelaajan väri näkyy käyttöliittymässä ("White's turn" / "Black's turn"). Vain vuorossa oleva pelaaja
+voi siirtää nappuloitaan.
+
+3. Pelin aloittaminen
+Kun peli käynnistyy:
+- Kaikki nappulat asetetaan aloitusasemaan laudalle.
+- Pelaajat voivat aloittaa vuorotellen siirtämällä omia nappuloitaan. Valkoinen aloittaa.
+
+4. Siirrot ja painallukset
+- Ensimmäinen klikkaus: Valitsee ruudun, jossa on oma nappula. Mahdolliset siirrot näkyvät aktivoituna (muut ruudut estetään).
+- Toinen klikkaus: Valitaan kohderuutu. Jos ruutu on sallittu siirtokohde, nappula siirtyy siihen. Nappulan
+voi siirtää vain sallituun ruutuun.
+- Mikäli valittua nappulaa ei halua siirtää, klikkaa samaa nappulaa uudelleen, jolloin vuoro säilyy samalla pelaajalla ja voi
+tehdä uuden siirron. 
+
+5. Voiton määrittely
+- Jos pelaaja syö vastustajan kuninkaan, peli päättyy välittömästi.
+- Näytölle tulee ilmoitus voittajasta: "White won!" tai "Black won!"
+- Tämän jälkeen kaikki ruudut asetetaan disabled tilaan (ei voi enää painaa) ja peli tulee aloittaa uudelleen (New game) tai lopettaa (Quit).
+
