@@ -6,7 +6,7 @@ Chess piece images were provided as part of the course material as well as the c
 A graphical two-player chess game implemented in C++ using the Qt framework.  
 The game allows two players to play locally on the same computer using a mouse-based graphical interface.
 
-<img width="438" height="565" alt="image" src="https://github.com/user-attachments/assets/72fd6d01-5860-4152-9c1d-2ab7183348c5" />
+<img width="413" height="560" alt="image" src="https://github.com/user-attachments/assets/93956bdb-b375-4a71-a2e3-b0a5fca0c389" />
 
 
 ### Features
