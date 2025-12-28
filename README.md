@@ -23,6 +23,10 @@ The game allows two players to play locally on the same computer using a mouse-b
 - Implements standard chess rules, excluding special moves such as castling and en passant
 - Developed as a learning project to practice GUI programming, event handling, and object-oriented design
 
+
+https://github.com/user-attachments/assets/59cc71cd-bdb1-4e3c-a0f9-b0fe1bbde0a1
+
+
 ### What I Learned
 - Designing a medium-sized C++ application using object-oriented principles
 - Structuring code using classes and applying inheritance to model chess pieces
